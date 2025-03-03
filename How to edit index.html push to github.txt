@@ -34,3 +34,7 @@ git add .
 git commit -m "Updated index.html"
 git push origin main
 
+To pull change and sync to local pc:
+#git pull origin main
+
+
