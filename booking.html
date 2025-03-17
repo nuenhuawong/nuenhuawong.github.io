@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your tennis coaching sessions in Singapore. Easy online booking for individual and group tennis lessons.">
+    <title>Booking - Tennis Learning in Singapore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Tennis Learning in Singapore Logo">
+                <h1>Tennis Learning in Singapore</h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="contact.html" class="cta-button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Book Your Session</h2>
+            <p>Simple, convenient booking for your tennis coaching needs</p>
+        </div>
+    </section>
+
+    <section class="booking-process">
+        <div class="container">
+            <h3>How Booking Works</h3>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h4>Check Availability</h4>
+                    <p>View the calendar below to see available time slots that fit your schedule</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h4>Select Options</h4>
+                    <p>Choose your preferred program, location, and session duration</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h4>Enter Details</h4>
+                    <p>Provide your contact information and any special requests</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h4>Confirm Booking</h4>
+                    <p>Receive confirmation and reminder emails with all session details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-calendar">
+        <div class="container">
+            <h3>Availability Calendar</h3>
+            <p class="calendar-intro">Check Coach Jack's availability and book your preferred time slot. Green slots indicate available times, while gray slots are already booked.</p>
+            
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="calendar-nav prev-month"><i class="fas fa-chevron-left"></i></button>
+                    <h4 class="current-month">March 2025</h4>
+                    <button class="calendar-nav next-month"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="calendar-grid">
+                    <!-- Calendar will be populated by JavaScript -->
+                    <div class="calendar-placeholder">
+                        <p>Loading calendar...</p>
+                        <p class="calendar-note">For demonstration purposes, this is a static calendar. In a live implementation, this would be connected to a real-time booking system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-form">
+        <div class="container">
+            <h3>Book Your Session</h3>
+            <form id="bookingForm" action="#" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program Type</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="beginners">Beginners Program</option>
+                            <option value="intermediate">Intermediate Program</option>
+                            <option value="group">Group Session</option>
+                            <option value="junior">Junior Development</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Preferred Location</label>
+                        <select id="location" name="location" required>
+                            <option value="">Select a location</option>
+                            <optgroup label="Public Courts">
+                                <option value="kallang">Kallang Tennis Centre</option>
+                                <option value="bedok">Bedok Heartbeat</option>
+                                <option value="tampines">Tampines Sport Hub</option>
+                                <option value="pasir-ris">Pasir Ris Tennis Centre</option>
+                            </optgroup>
+                            <optgroup label="Private Condos">
+                                <option value="simei">Simei Area</option>
+                                <option value="tampines-condo">Tampines Area</option>
+                                <option value="pasir-ris-condo">Pasir Ris Area</option>
+                                <option value="other-east">Other East Areas</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="session-type">Session Type</label>
+                        <select id="session-type" name="session-type" required>
+                            <option value="">Select session type</option>
+                            <option value="individual">Individual Session</option>
+                            <option value="package">5-Session Package</option>
+                            <option value="group">Group Session (3-6 people)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select a time</option>
+                            <optgroup label="Weekdays">
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </optgroup>
+                            <optgroup label="Weekends & Holidays">
+                                <option value="07:00">7:00 AM</option>
+                                <option value="08:00">8:00 AM</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Session Duration</label>
+                        <select id="duration" name="duration" required>
+                            <option value="60">1 hour</option>
+                            <option value="90">1.5 hours</option>
+                            <option value="120">2 hours</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="notes">Special Requests or Notes</label>
+                        <textarea id="notes" name="notes" rows="4"></textarea>
+                    </div>
+                </div>
+                
+                <div class="booking-policies">
+                    <h4>Booking Policies</h4>
+                    <ul>
+                        <li><i class="fas fa-info-circle"></i> Payment is required at least 3 hours before the scheduled session</li>
+                        <li><i class="fas fa-info-circle"></i> Cancellations must be made 24 hours in advance for a full refund</li>
+                        <li><i class="fas fa-info-circle"></i> Court fees for public courts are not included in the coaching fee</li>
+                        <li><i class="fas fa-info-circle"></i> For group sessions, all participants must be registered</li>
+                        <li><i class="fas fa-info-circle"></i> If a session is stopped due to rain, the remaining minutes will be added to a future session</li>
+                    </ul>
+                    <div class="form-check">
+                        <input type="checkbox" id="policy-agreement" name="policy-agreement" required>
+                        <label for="policy-agreement">I have read and agree to the booking policies</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="primary-button">Submit Booking Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="booking-faq">
+        <div class="container">
+            <h3>Booking FAQs</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How far in advance should I book?</h4>
+                    <p>We recommend booking at least 3-5 days in advance to secure your preferred time slot, especially for peak hours and weekends. Last-minute bookings are possible but subject to availability.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I pay for my session?</h4>
+                    <p>After your booking is confirmed, you'll receive payment instructions via email. We accept bank transfers, PayNow, and major credit cards. Payment must be completed at least 3 hours before your session.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is your cancellation policy?</h4>
+                    <p>Cancellations made at least 24 hours before the scheduled session qualify for a full refund or rescheduling. Late cancellations may incur a fee, except in cases of inclement weather or emergencies.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I reschedule my session?</h4>
+                    <p>Yes, you can reschedule through the link in your confirmation email. Rescheduling requests should be made at least 24 hours before your original session time to avoid any fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What happens if it rains?</h4>
+                    <p>If a session is stopped due to rain, the remaining minutes will be added to a future training session. We'll contact you to arrange a convenient time to complete your session.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I book for multiple people?</h4>
+                    <p>For group sessions, select "Group Session" as your session type and indicate the number of participants in the notes section. All participants should be of similar skill levels for the most effective coaching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Questions About Booking?</h2>
+            <p>Contact Coach Jack directly for assistance with scheduling or special requests.</p>
+            <a href="contact.html" class="primary-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-white.png" alt="Tennis Learning in Singapore Logo">
+                    <p>Tennis Learning in Singapore</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li><i class="fas fa-user"></i> Coach Jack Wong</li>
+                        <li><i class="fas fa-phone"></i> +65 97847197</li>
+                        <li><i class="fas fa-envelope"></i> nuenhuawong@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Operating Hours</h4>
+                    <ul>
+                        <li><i class="fas fa-clock"></i> Weekdays: 6:00 PM - 10:00 PM</li>
+                        <li><i class="fas fa-clock"></i> Weekends & Holidays: 7:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tennis Learning in Singapore. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
