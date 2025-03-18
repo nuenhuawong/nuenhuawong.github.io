@@ -41,21 +41,7 @@ header {
   padding: 10px 20px;
 }
 
-/* Site Title Styles */
-.site-title-container {
-  flex-grow: 0;
-  margin-right: 20px;
-}
-
-.site-title {
-  color: var(--light-text-color);
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 300;
-  white-space: nowrap;
-}
-
-/* Navigation styles */
+/* Navigation styles - adjusted after removing logo */
 nav {
   flex-grow: 1;
 }
@@ -346,10 +332,6 @@ footer {
     padding: 10px;
   }
   
-  .site-title {
-    font-size: 18px;
-  }
-  
   nav ul {
     margin-top: 0;
   }
@@ -377,16 +359,6 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .site-title-container {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  
   .hero-section h1 {
     font-size: 28px;
   }
