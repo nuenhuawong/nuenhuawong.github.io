@@ -91,8 +91,9 @@ nav .nav-link.active {
 /* Hero Section Styles */
 .hero-section {
   background-color: var(--primary-color);
-  background-image: url('images/tennis-background.webp');
-  background-size: cover;
+  background-image: url('Carousel First page.jpg');
+/* Sets the width to 100px and height to 50px */
+  background-size: 1100px 360px;
   background-position: center;
   color: var(--light-text-color);
   text-align: center;
@@ -118,25 +119,25 @@ nav .nav-link.active {
 
 .hero-section h1 {
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .hero-section .tagline {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 /* Contact Hero Section */
 .contact-hero {
-  height: 300px;
-  padding: 120px 20px 40px;
+  height: 340px;
+  padding: 220px 10px 40px;
 }
 
 .contact-hero h1 {
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Roboto', Arial;
 }
 
@@ -414,4 +415,13 @@ footer {
   .contact-item i {
     font-size: 24px;
   }
+ .fixed-bg-section {
+      background-image: url('Carousel First page.jpg'); /* Path to your image */
+      background-attachment: fixed; /* Keeps the background fixed during scroll */
+      background-size: cover; /* Ensures the image covers the entire section */
+      background-position: center; /* Centers the background image */
+      background-repeat: no-repeat; /* Prevents the background from repeating */
+      height: 100vh; /* Sets the section height to the full viewport height */
+      margin: 0; /* Removes default margin */
+ }
 }
