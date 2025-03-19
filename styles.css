@@ -415,13 +415,10 @@ footer {
   .contact-item i {
     font-size: 24px;
   }
- .fixed-bg-section {
-      background-image: url('Carousel First page.jpg'); /* Path to your image */
-      background-attachment: fixed; /* Keeps the background fixed during scroll */
-      background-size: cover; /* Ensures the image covers the entire section */
-      background-position: center; /* Centers the background image */
-      background-repeat: no-repeat; /* Prevents the background from repeating */
-      height: 100vh; /* Sets the section height to the full viewport height */
-      margin: 0; /* Removes default margin */
- }
+
+  .rain-icon img {
+    width: 44px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
 }
